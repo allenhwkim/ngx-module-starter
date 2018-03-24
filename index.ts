@@ -1,1 +1,1 @@
-export {OneLib} from './libs/lib-one';
+export {OneLib} from './modules/module-one';
