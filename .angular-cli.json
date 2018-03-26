@@ -16,19 +16,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [ "styles.css" ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+      "scripts": [] 
     }
   ],
-  "e2e": {
-    "protractor": {
-      "config": "app/protractor.conf.js"
-    }
-  },
   "lint": [
     {
       "project": "src/tsconfig.app.json",
