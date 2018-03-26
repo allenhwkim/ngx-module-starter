@@ -1,17 +1,12 @@
 {
   "name": "ngui",
   "version": "0.0.0",
-  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "modules/index.ts"
-    }
-  },
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng-packagr -p package.json",
+    "build": "ng build --prod",
+    "build:lib": "ng-packagr -p package.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -51,5 +46,11 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
+  },
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "modules/index.ts"
+    }
   }
 }
