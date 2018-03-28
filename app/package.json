@@ -1,17 +1,13 @@
 {
-  "name": "ngui",
-  "version": "0.0.0",
-  "license": "MIT",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "build:lib": "ng-packagr -p package.json",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "jest",
+    "lint": "tslint"
   },
-  "private": true,
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
@@ -34,23 +30,9 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
-    "jasmine-core": "~2.8.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~2.0.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "^1.2.1",
-    "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "ng-packagr": "^2.2.0",
-    "protractor": "~5.1.2",
+    "pre-commit": "^1.2.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  },
-  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "modules/index.ts"
-    }
   }
 }
