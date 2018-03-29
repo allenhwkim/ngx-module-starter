@@ -3,7 +3,35 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "tslint"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setupJest.ts",
+    "globals": {
+      "__TRANSFORM_HTML__": true,
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.+(ts|js)?(x)",
+      "**/+(*.)+(spec).+(ts|js)?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "html"
+    ],
+    "moduleNameMapper": null,
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ngrx)"
+    ],
+    "testResultsProcessor": "./node_modules/jest-junit-reporter",
+    "collectCoverageFrom": [
+      "src/**/*(*.service|*.component|*.pipe|*.directive).{ts,html}"
+    ]
   },
   "pre-commit": [
     "lint"
@@ -26,10 +54,13 @@
     "@angular/cli": "~1.7.3",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
-    "@types/jasmine": "~2.8.3",
-    "@types/jasminewd2": "~2.0.2",
+    "@types/jest": "^22.2.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "jest": "^22.4.3",
+    "jest-junit-reporter": "^1.1.0",
+    "jest-preset-angular": "^5.2.1",
+    "nightmare": "^3.0.1",
     "pre-commit": "^1.2.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",

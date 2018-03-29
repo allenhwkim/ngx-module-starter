@@ -1,0 +1,26 @@
+{
+  "rootDir": "..",
+  "preset": "jest-preset-angular",
+  "setupTestFrameworkScriptFile": "<rootDir>/test/setupJest.ts",
+  "transform": {
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "globals": {
+    "__TRANSFORM_HTML__": true,
+    "ts-jest": {
+      "tsConfigFile": "tsconfig.json"
+    }
+  },
+  "testMatch": [
+    "**/+(*.)+(test).+(ts|js)?(x)"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "html"
+  ],
+  "moduleNameMapper": null,
+  "transformIgnorePatterns": [
+    "node_modules/(?!@ngrx)"
+  ]
+}

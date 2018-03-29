@@ -1,3 +1,13 @@
-<h1>Modules Test App</h1>
-<one-component></one-component>
-<two-component></two-component>
+<h1>Welcome to app!</h1>
+
+<fieldset>
+  <legend><h2>module one test</h2></legend>
+  <one-component id="btn1" (buttonClicked$)="message='button clicked!'"></one-component>
+  <one-component id="btn2" (buttonClicked$)="message=''"></one-component>
+  <b>message</b>: <span id="message">{{message}}</span>
+</fieldset>
+
+<fieldset>
+  <legend><h2>module two test</h2></legend>
+  <two-component></two-component>
+</fieldset>

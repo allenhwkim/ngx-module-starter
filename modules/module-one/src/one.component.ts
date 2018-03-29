@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'one-component',
-  template: `<p>Module One Component!</p>`,
+  template: `<button (click)="buttonClicked$.emit()">Click This</button>`,
   styles: [`p {color: red;}`]
 })
-export class OneComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
+export class OneComponent {
+  @Output() buttonClicked$: EventEmitter<any> = new EventEmitter();
 }
