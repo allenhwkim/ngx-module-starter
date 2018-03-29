@@ -4,6 +4,7 @@
     "build": "ng build --prod",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:browser": "jest -c test/nightmare-preset.json",
     "lint": "tslint"
   },
   "jest": {
