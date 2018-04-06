@@ -4,7 +4,6 @@ import 'rxjs/add/observable/of';
 
 @Injectable()
 export class ValueService {
-  constructor() { }
   getValue = () => 'real value';
   getObservableValue = () => Observable.of('observable value');
   getPromiseValue = () => Promise.resolve('promise value');

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/allen.kim/github/ngui/app/src/app.component.spec.ts" errors="0" package="/Users/allen.kim/github/ngui/app/src/app.component.spec.ts" hostname="localhost" tests="3" failures="0" time="1.411" timestamp="2018-04-06T20:56:28">
+  <testsuite id="0" name="/Users/allen.kim/github/ngui/app/src/master.service.spec.js" errors="0" package="/Users/allen.kim/github/ngui/app/src/master.service.spec.js" hostname="localhost" tests="1" failures="0" time="1.166" timestamp="2018-04-06T21:32:03">
+    <properties>
+    </properties>
+    <testcase classname="MasterService" name="#getValue should return value" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="1" name="/Users/allen.kim/github/ngui/app/src/app.component.spec.ts" errors="0" package="/Users/allen.kim/github/ngui/app/src/app.component.spec.ts" hostname="localhost" tests="3" failures="0" time="0.345" timestamp="2018-04-06T21:32:05">
     <properties>
     </properties>
     <testcase classname="AppComponent" name="should create the app" time="0">
@@ -12,7 +20,7 @@
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="1" name="/Users/allen.kim/github/ngui/app/src/value.service.spec.ts" errors="0" package="/Users/allen.kim/github/ngui/app/src/value.service.spec.ts" hostname="localhost" tests="3" failures="0" time="0.154" timestamp="2018-04-06T20:56:29">
+  <testsuite id="2" name="/Users/allen.kim/github/ngui/app/src/value.service.spec.ts" errors="0" package="/Users/allen.kim/github/ngui/app/src/value.service.spec.ts" hostname="localhost" tests="3" failures="0" time="0.112" timestamp="2018-04-06T21:32:05">
     <properties>
     </properties>
     <testcase classname="ValueService" name="#getValue should return real value" time="0">
@@ -20,14 +28,6 @@
     <testcase classname="ValueService" name="#getObservableValue should return value from observable" time="0">
     </testcase>
     <testcase classname="ValueService" name="#getPromiseValue should return value from a promise" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="2" name="/Users/allen.kim/github/ngui/app/src/master.service.spec.ts" errors="0" package="/Users/allen.kim/github/ngui/app/src/master.service.spec.ts" hostname="localhost" tests="1" failures="0" time="0.145" timestamp="2018-04-06T20:56:29">
-    <properties>
-    </properties>
-    <testcase classname="MasterService" name="#getValue should return value" time="0">
     </testcase>
     <system-out/>
     <system-err/>
