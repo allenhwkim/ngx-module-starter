@@ -1,0 +1,25 @@
+{
+  "name": "ngx-module-starter",
+  "description": "Angular5+ library development starter using jest, codecept, ngx-packagr ",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd app && npm start",
+    "build": "cd modules && npm run build",
+    "test": "cd app && npm test && cd modules && npm test",
+  },
+  "main": "modules/dist/bundles/ngx-module-starter.umd.js",
+  "typings": "modules/dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allenhwkim/ngx-module-starter"
+  },
+  "author": "Allen Kim<allenhwkim@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/allenhwkim/ngx-module-starter/issues"
+  },
+  "homepage": "https://github.com/allenhwkim/ngx-module-starter#readme",
+  "keywords": [
+    "angular", "typescript", "jest", "coecept", "package", "module"
+  ]
+}

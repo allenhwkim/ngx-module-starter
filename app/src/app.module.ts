@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { OneModule } from '../../modules/module-one';
-import { TwoModule } from '../../modules/module-two';
+import { OneModule, TwoModule } from 'ngx-module-starter';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +10,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     OneModule,
-    TwoModule,
+    TwoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 // do not import any other than you test. For others, mock it
-import {ValueService} from './value.service';
+import { ValueService } from './value.service';
 
 // Straight Jasmine testing without Angular's testing support
 describe('ValueService', () => {

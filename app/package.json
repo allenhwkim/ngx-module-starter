@@ -2,14 +2,15 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:browser": "jest -c test/nightmare-preset.json",
+    "test": "npm run test:unit && npm run test:acceptance",
+    "test:unit": "jest",
+    "test:acceptance": "server-test start http-get://localhost:4200 test:cc",
+    "test:cc": "codeceptjs run",
     "lint": "tslint"
   },
   "jest": {
     "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setupJest.ts",
+    "setupTestFrameworkScriptFile": "<rootDir>/test/jest-setup.ts",
     "globals": {
       "__TRANSFORM_HTML__": true,
       "ts-jest": {
@@ -49,7 +50,8 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "ngx-module-starter": "file:../modules"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.3",
@@ -57,12 +59,15 @@
     "@angular/language-service": "^5.2.0",
     "@types/jest": "^22.2.2",
     "@types/node": "~6.0.60",
-    "codelyzer": "^4.0.1",
+    "angular-tslint-rules": "^1.2.1",
+    "codeceptjs": "^1.1.7",
+    "codelyzer": "^4.2.1",
     "jest": "^22.4.3",
     "jest-junit-reporter": "^1.1.0",
     "jest-preset-angular": "^5.2.1",
-    "nightmare": "^3.0.1",
     "pre-commit": "^1.2.2",
+    "puppeteer": "^1.2.0",
+    "start-server-and-test": "^1.4.0",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"

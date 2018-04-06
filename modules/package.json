@@ -1,7 +1,5 @@
 {
-  "name": "ngui",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "ngx-module-starter",
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "ngPackage": {
     "lib": {

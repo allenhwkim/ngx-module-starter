@@ -1,9 +1,9 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 // do not import any other than you test. For others, mock it
 import { AppComponent } from './app.component';
-import { MockComponent } from '../test/mock';
+import { MockComponent } from '../test/jest-setup';
 
 describe('AppComponent', () => {
 
@@ -11,9 +11,9 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MockComponent('one-component'), 
-        MockComponent('two-component') 
-      ],
+        MockComponent('one-component'),
+        MockComponent('two-component')
+      ]
       // schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
   }));
@@ -24,7 +24,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'app'`, async(() => {
+  it("should have as title 'app'", async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
