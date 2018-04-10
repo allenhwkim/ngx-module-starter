@@ -1,6 +1,6 @@
 # starter package to build Angular5+ libraries
 
-Angular 5 library starter application to create Angular5+ package with multiple modules which makes to import modules from pakcages. e.g. `import {ButtonModule} form '@angular/material';`, `import {MyModule} from 'my-package';` 
+Angular 5 library starter application to create Angular5+ package with multiple modules which makes to import modules from pakcages. e.g. `import {MyModuleOne, MyModuleTwo} from 'my-package';` 
 
 It has two main directories;
 1. `app` - to test all of your modules
