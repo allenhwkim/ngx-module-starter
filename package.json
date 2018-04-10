@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cd app && npm start",
     "build": "cd modules && npm run build",
-    "test": "cd app && npm test && cd modules && npm test",
+    "test": "cd app && npm test && cd modules && npm test"
   },
   "main": "modules/dist/bundles/ngx-module-starter.umd.js",
   "typings": "modules/dist/index.d.ts",

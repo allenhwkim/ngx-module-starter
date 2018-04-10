@@ -73,37 +73,25 @@ npm test:acceptance        | x              |                   |
 modules/dist
 ├── README.md
 ├── bundles
-│   ├── ngx-module-starter-module-one.umd.js
-│   ├── ngx-module-starter-module-one.umd.js.map
-│   ├── ngx-module-starter-module-one.umd.min.js
-│   ├── ngx-module-starter-module-one.umd.min.js.map
-│   ├── ngx-module-starter-module-two.umd.js
-│   ├── ngx-module-starter-module-two.umd.js.map
-│   ├── ngx-module-starter-module-two.umd.min.js
-│   ├── ngx-module-starter-module-two.umd.min.js.map
-│   ├── ngx-module-starter.umd.js
-│   ├── ngx-module-starter.umd.js.map
-│   ├── ngx-module-starter.umd.min.js
-│   └── ngx-module-starter.umd.min.js.map
+│   ├── my-library-module-one.umd.js
+│   ├── my-library-module-one.umd.min.js
+│   ├── my-library-module-two.umd.js
+│   ├── my-library-module-two.umd.min.js
+│   ├── my-library.umd.js
+│   └── my-library.umd.min.js
 ├── esm2015
-│   ├── ngx-module-starter-module-one.js
-│   ├── ngx-module-starter-module-one.js.map
-│   ├── ngx-module-starter-module-two.js
-│   ├── ngx-module-starter-module-two.js.map
-│   ├── ngx-module-starter.js
-│   └── ngx-module-starter.js.map
+│   ├── my-library-module-one.js
+│   ├── my-library-module-two.js
+│   └── my-library.js
 ├── esm5
-│   ├── ngx-module-starter-module-one.js
-│   ├── ngx-module-starter-module-one.js.map
-│   ├── ngx-module-starter-module-two.js
-│   ├── ngx-module-starter-module-two.js.map
-│   ├── ngx-module-starter.js
-│   └── ngx-module-starter.js.map
+│   ├── my-library-module-one.js
+│   ├── my-library-module-two.js
+│   └── my-library.js
 ├── index.d.ts
 ├── module-one
 │   ├── index.d.ts
-│   ├── ngx-module-starter-module-one.d.ts
-│   ├── ngx-module-starter-module-one.metadata.json
+│   ├── my-library-module-one.d.ts
+│   ├── my-library-module-one.metadata.json
 │   ├── package.json
 │   └── src
 │       ├── one.component.d.ts
@@ -111,14 +99,14 @@ modules/dist
 ├── module-one.tgz
 ├── module-two
 │   ├── index.d.ts
-│   ├── ngx-module-starter-module-two.d.ts
-│   ├── ngx-module-starter-module-two.metadata.json
+│   ├── my-library-module-two.d.ts
+│   ├── my-library-module-two.metadata.json
 │   ├── package.json
 │   └── src
 │       ├── two.component.d.ts
 │       └── two.module.d.ts
 ├── module-two.tgz
-├── ngx-module-starter.d.ts
-├── ngx-module-starter.metadata.json
+├── my-library.d.ts
+├── my-library.metadata.json
 └── package.json
 ```
