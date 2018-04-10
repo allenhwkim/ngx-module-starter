@@ -1,10 +1,12 @@
-# starter package to build Angular5+ libraries
+# Starter app build a package of Angular5+ libraries
 
 Angular 5 library starter application to create Angular5+ package with multiple modules which makes to import modules from pakcages. e.g. `import {MyModuleOne, MyModuleTwo} from 'my-package';` 
 
 It has two main directories;
 1. `app` - to test all of your modules
 2. `modules` - each module goes here.
+
+It follows [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview#).
 
 ## Tech. Stack
 - Jest for unit test
