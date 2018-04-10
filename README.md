@@ -70,6 +70,7 @@ npm test:acceptance        | x              |                   |
 
 ## Build output example
 ```
+modules/dist
 ├── README.md
 ├── bundles
 │   ├── ngx-module-starter-module-one.umd.js
