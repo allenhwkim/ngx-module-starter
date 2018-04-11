@@ -1,4 +1,4 @@
-# Starter app build a package of Angular5+ libraries
+# Seed project to build Angular5+ modules
 
 Angular 5 library starter application to create Angular5+ package with multiple modules which makes to import modules from pakcages. e.g. `import {MyModuleOne, MyModuleTwo} from 'my-package';` 
 
