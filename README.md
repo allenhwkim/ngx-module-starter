@@ -8,6 +8,14 @@ It has two main directories;
 
 It follows [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview#).
 
+## Getting Started
+```
+$ git clone https://github.com/allenhwkim/ngx-module-starter.git <my-package>
+$ cd <my-package>
+$ rm -rf .git                                  # to remove ngx-module-starter git info
+$ vi .angular-cli.json package.json README.md  # edit these files for your package
+```
+
 ## Tech. Stack
 - Jest for unit test
 - CodeceptJS for acceptptance
