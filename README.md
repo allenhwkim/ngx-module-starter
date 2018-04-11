@@ -63,11 +63,52 @@ command                    | main directory  | each module directory
 npm start                  | x               |  
 npm run build              | x               |  
 npm test                   | x               |  x
-npm test:unit              | x               |  
-npm test:acceptance        | x               |  
-npm lint                   | x               |  
+npm run test:unit          | x               |  
+npm run test:acceptance    | x               |  
+npm run lint               | x               |  
 
 ## Build output example
 ```
 modules/dist
+├── README.md
+├── bundles
+│   ├── my-package-modules-module-one.umd.js
+│   ├── my-package-modules-module-one.umd.min.js
+│   ├── my-package-modules-module-two.umd.js
+│   ├── my-package-modules-module-two.umd.min.js
+│   ├── my-package.umd.js
+│   └── my-package.umd.min.js
+├── esm2015
+│   ├── my-package-modules-module-one.js
+│   ├── my-package-modules-module-two.js
+│   └── my-package.js
+├── esm5
+│   ├── my-package-modules-module-one.js
+│   ├── my-package-modules-module-two.js
+│   └── my-package.js
+├── index.d.ts
+├── module-one
+│   ├── index.d.ts
+│   └── src
+├── module-two
+│   ├── index.d.ts
+│   └── src
+├── modules
+│   ├── module-one
+│   │   ├── index.d.ts
+│   │   ├── my-package-modules-module-one.d.ts
+│   │   ├── my-package-modules-module-one.metadata.json
+│   │   ├── package.json
+│   │   └── src
+│   ├── module-one.tgz
+│   ├── module-two
+│   │   ├── index.d.ts
+│   │   ├── my-package-modules-module-two.d.ts
+│   │   ├── my-package-modules-module-two.metadata.json
+│   │   ├── package.json
+│   │   └── src
+│   └── module-two.tgz
+├── my-package.d.ts
+├── my-package.metadata.json
+└── package.json
 ```
