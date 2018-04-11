@@ -1,12 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'two-component',
-  template: `<p>Module Two Component!</p>`,
-  styles: [`p {color: blue;}`]
+  selector: 'my-component-2',
+  template: '<p>Module Two Component!</p>',
+  styles: ['p {color: blue;}']
 })
-export class TwoComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
+export class TwoComponent {
 }

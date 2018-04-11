@@ -1,11 +1,11 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'one-component',
+  selector: 'my-component-1',
   template: `
     <button (click)="buttonClicked$.emit()">Click This</button>
   `,
-  styles: [`p {color: red;}`]
+  styles: ['']
 })
 export class OneComponent {
   @Output() buttonClicked$: EventEmitter<any> = new EventEmitter();

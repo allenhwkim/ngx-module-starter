@@ -16,12 +16,6 @@
     "lib": [
       "es2017",
       "dom"
-    ],
-    "paths": {
-      "@angular/*": ["../modules/node_modules/@angular/*"],
-      "@ngrx/*": ["../modules/node_modules/@ngrx/*"],
-      "rxjs/*": ["../modules/node_modules/rxjs/*"],
-      "ngx-module-starter": ["../modules"]
-    }
+    ]
   }
 }

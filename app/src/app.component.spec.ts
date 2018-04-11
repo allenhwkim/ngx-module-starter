@@ -3,7 +3,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 // do not import any other than you test. For others, mock it
 import { AppComponent } from './app.component';
-import { MockComponent } from '../test/jest-setup';
+import { MockComponent } from '../../test/jest-setup';
 
 describe('AppComponent', () => {
 
@@ -11,8 +11,8 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MockComponent('one-component'),
-        MockComponent('two-component')
+        MockComponent('my-component-1'),
+        MockComponent('my-component-2')
       ]
       // schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();

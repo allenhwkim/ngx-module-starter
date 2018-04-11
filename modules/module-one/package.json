@@ -2,37 +2,9 @@
   "ngPackage": {
     "lib": {
       "entryFile": "index.ts"
-    } 
+    }
   },
   "scripts": {
-    "test": "../node_modules/.bin/jest **/*.spec.ts",
-    "test:unit": "npm test"
-  },
-  "jest": {
-    "rootDir": "..",
-    "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/test/jest-setup.ts",
-    "globals": {
-      "__TRANSFORM_HTML__": true,
-      "ts-jest": {
-        "tsConfigFile": "tsconfig.json"
-      }
-    },
-    "testMatch": [
-      "**/+(*.)+(spec).+(ts|js)?(x)"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "html"
-    ],
-    "moduleNameMapper": null,
-    "transformIgnorePatterns": [
-      "node_modules/(?!@ngrx)"
-    ],
-    "testResultsProcessor": "./node_modules/jest-junit-reporter",
-    "collectCoverageFrom": [
-      "src/**/*(*.service|*.component|*.pipe|*.directive).{ts,html}"
-    ]
+    "test": "cd ../.. && jest modules/module-one/**/*.spec.ts"
   }
 }

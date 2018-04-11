@@ -3,7 +3,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 // do not import any other than you test. For others, mock it
 import { OneComponent } from './one.component';
-import { MockComponent } from '../../test/jest-setup';
+import { MockComponent } from '../../../test/jest-setup';
 
 describe('AppComponent', () => {
 
@@ -17,7 +17,7 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
-  it("should have as title 'app'", async((done) => {
+  it("should have as title 'app'", async(done => {
     const fixture = TestBed.createComponent(OneComponent);
     const comp = fixture.debugElement.componentInstance;
     expect(comp).toBeTruthy();

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { OneModule, TwoModule } from 'ngx-module-starter';
+import { OneModule, TwoModule } from '../../modules';
 
 import { AppComponent } from './app.component';
 

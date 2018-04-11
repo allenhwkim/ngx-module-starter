@@ -6,15 +6,14 @@
     "angular-tslint-rules"
   ],
   "rules": {
-    "newline-per-chained-call": false,
-    "no-unnecessary-class": false,
-    "no-implicit-dependencies": [
-      true,
-      "dev"
-    ],
     "angular-whitespace": [
       true,
       "check-interpolation"
+    ],
+    "component-selector": [
+      true,
+      "element", ["app", "my"],
+      "kebab-case"
     ],
     "directive-selector": [
       true,
@@ -25,18 +24,13 @@
       ],
       "kebab-case"
     ],
-    "component-selector": [
-      true,
-      "element",
-      [
-        "app",
-        "i18n",
-        "router"
-      ],
-      "kebab-case"
-    ],
-    "use-view-encapsulation": false,
+    "newline-per-chained-call": false,
+    "no-console": false,
+    "no-dynamic-delete": false,
     "no-forward-ref": false,
+    "no-unnecessary-class": false,
+    "no-implicit-dependencies": false,
+    "use-view-encapsulation": false,
     "i18n": false
   }
 }

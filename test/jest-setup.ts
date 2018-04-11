@@ -1,7 +1,6 @@
 /**
- *
  * Jest initial setup actions
- * 
+ *
  * It also enables the following to all Jest tests
  *  . window.localStorage
  *  . window.sessionStorage
@@ -13,7 +12,7 @@
  *  . MockDirective()
  */
 import 'jest-preset-angular';
- 
+
 // common rxjs imports
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/switchMap';
@@ -21,19 +20,20 @@ import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
 // ...
 
-import {Pipe, PipeTransform, Type, Component, Directive, EventEmitter } from '@angular/core';
- 
+import { Component, Directive, EventEmitter, Pipe, PipeTransform, Type } from '@angular/core';
+
 Error.stackTraceLimit = 2;
 
-global['CSS'] = null;
+global['CSS'] = undefined;
 
 const mock = () => {
   let storage = {};
+
   return {
-    getItem: key => key in storage ? storage[key] : null,
+    getItem: key => key in storage ? storage[key] : undefined,
     setItem: (key, value) => storage[key] = value || '',
     removeItem: key => delete storage[key],
-    clear: () => storage = {},
+    clear: () => storage = {}
   };
 };
 
@@ -62,9 +62,9 @@ Object.defineProperty(document.body.style, 'transform', {
   value: () => {
     return {
       enumerable: true,
-      configurable: true,
+      configurable: true
     };
-  },
+  }
 });
 
 /**
@@ -73,12 +73,12 @@ Object.defineProperty(document.body.style, 'transform', {
  * MockPipe('some-pipe', () => 'foo');
  */
 export function MockPipe(name: string, transform?: any): Pipe {
-  
+
   class Mock implements PipeTransform {
     transform = transform || (() => undefined);
   }
 
-  return Pipe({name:name})(Mock as any);
+  return Pipe({name})(Mock as any);
 }
 
 /**
@@ -89,7 +89,7 @@ export function MockPipe(name: string, transform?: any): Pipe {
 export function MockComponent(selector: string, options: Component = {}): Component {
 
   const metadata: Component = {
-    selector: selector,
+    selector,
     template: options.template || '',
     inputs: options.inputs || [],
     outputs: options.outputs || [],
@@ -115,7 +115,7 @@ export function MockComponent(selector: string, options: Component = {}): Compon
 export function MockDirective(selector: string, options: Directive = {}): Directive {
 
   const metadata: Directive = {
-    selector: selector,
+    selector,
     inputs: options.inputs || [],
     outputs: options.outputs || [],
     providers: options.providers || [],
