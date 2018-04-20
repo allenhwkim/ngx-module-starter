@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MockComponent } from '../../test/jest-setup';
 
 describe('AppComponent', () => {
+  var fixture, component;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -16,22 +17,13 @@ describe('AppComponent', () => {
       ]
       // schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.debugElement.componentInstance;
   }));
 
   it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
-
-  it("should have as title 'app'", async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app');
-  }));
-
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+    expect(component).toBeTruthy();
+    expect(copmponent.title).toEqual('app');
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
