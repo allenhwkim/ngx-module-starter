@@ -1,7 +1,7 @@
 // do not import any other than you test. For others, mock it
 import { ValueService } from './value.service';
 
-// Straight Jasmine testing without Angular's testing support
+// straight Jasmine testing without Angular's testing support
 describe('ValueService', () => {
   let service: ValueService;
   beforeEach(() => { service = new ValueService(); });

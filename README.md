@@ -1,10 +1,11 @@
-# Seed project to build Angular5+ modules
+# Angular5+ Library Seed project
 
-Angular 5 library starter application to create Angular5+ package with multiple modules which makes to import modules from pakcages. e.g. `import {MyModuleOne, MyModuleTwo} from 'my-package';` 
+Angular 5 library starter application to create Angular5+ package with multiple modules, 
+which enablel importing  modules from pakcages. e.g. `import {MyModuleOne, MyModuleTwo} from 'my-package';` 
 
 It has two main directories;
 1. `app` - to test all of your modules
-2. `modules` - each module goes here.
+2. `lib` - each module goes here.
 
 It follows [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview#).
 
@@ -48,7 +49,7 @@ $ vi .angular-cli.json package.json README.md  # edit these files for your packa
 │   ├── index.html
 │   └── src
 ├── codecept.json
-├── modules              # angular modules  directory 
+├── lib                 # angular modules  directory 
 │   ├── index.ts      
 │   ├── module-one
 │   │   ├── index.ts
@@ -65,58 +66,6 @@ $ vi .angular-cli.json package.json README.md  # edit these files for your packa
 ```
 
 ##  Commands
-
-command                    | main directory  | each module directory
--------------------------- | --------------- | ---------------------
-npm start                  | x               |  
-npm run build              | x               |  
-npm test                   | x               |  x
-npm run test:unit          | x               |  
-npm run test:acceptance    | x               |  
-npm run lint               | x               |  
-
-## Build output example
-```
-modules/dist
-├── README.md
-├── bundles
-│   ├── my-package-modules-module-one.umd.js
-│   ├── my-package-modules-module-one.umd.min.js
-│   ├── my-package-modules-module-two.umd.js
-│   ├── my-package-modules-module-two.umd.min.js
-│   ├── my-package.umd.js
-│   └── my-package.umd.min.js
-├── esm2015
-│   ├── my-package-modules-module-one.js
-│   ├── my-package-modules-module-two.js
-│   └── my-package.js
-├── esm5
-│   ├── my-package-modules-module-one.js
-│   ├── my-package-modules-module-two.js
-│   └── my-package.js
-├── index.d.ts
-├── module-one
-│   ├── index.d.ts
-│   └── src
-├── module-two
-│   ├── index.d.ts
-│   └── src
-├── modules
-│   ├── module-one
-│   │   ├── index.d.ts
-│   │   ├── my-package-modules-module-one.d.ts
-│   │   ├── my-package-modules-module-one.metadata.json
-│   │   ├── package.json
-│   │   └── src
-│   ├── module-one.tgz
-│   ├── module-two
-│   │   ├── index.d.ts
-│   │   ├── my-package-modules-module-two.d.ts
-│   │   ├── my-package-modules-module-two.metadata.json
-│   │   ├── package.json
-│   │   └── src
-│   └── module-two.tgz
-├── my-package.d.ts
-├── my-package.metadata.json
-└── package.json
-```
+`npm start` to start test application for all modules
+`npm run build` to build library and test application for production
+`npm test` to run tests

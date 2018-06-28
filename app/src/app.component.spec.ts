@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { MockComponent } from '../../test/jest-setup';
 
 describe('AppComponent', () => {
-  var fixture, component;
+  var fixture;
+  var component;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -23,7 +24,7 @@ describe('AppComponent', () => {
 
   it('should create the app', async(() => {
     expect(component).toBeTruthy();
-    expect(copmponent.title).toEqual('app');
+    expect(component.title).toEqual('app');
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');

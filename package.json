@@ -3,26 +3,26 @@
   "description": "Angular5+ library development starter using jest, codecept, ngx-packagr ",
   "version": "0.1.0",
   "license": "MIT",
-  "main": "modules/dist/bundles/my-package.umd.js",
-  "typings": "modules/dist/index.d.ts",
+  "main": "lib/dist/bundles/my-package.umd.js",
+  "typings": "lib/dist/index.d.ts",
   "scripts": {
     "start": "ng serve",
-    "build": "npm run build:app && npm run build:modules",
+    "build": "npm run build:app && npm run build:lib",
     "build:app": "ng build --prod",
-    "build:modules": "ng-packagr -p package.json",
+    "build:lib": "ng-packagr -p package.json",
     "test": "npm run test:unit && npm run test:acceptance",
     "test:unit": "jest",
-    "test:acceptance": "server-server-and-test start http-get://localhost:4200 test:codecept",
-    "test:codedept": "codeceptjs run",
+    "test:acceptance": "start-server-and-test start http-get://localhost:4200 test:codecept",
+    "test:codecept": "codeceptjs run",
     "lint": "tslint --project '.' -t stylish --fix"
   },
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "ngPackage": {
     "lib": {
-      "entryFile": "modules/index.ts"
+      "entryFile": "lib/index.ts"
     },
     "deleteDestPath": true,
-    "dest": "modules/dist"
+    "dest": "lib/dist"
   },
   "pre-commit": [
     "lint"
@@ -65,7 +65,7 @@
     "codelyzer": "^4.2.1",
     "core-js": "^2.4.1",
     "jest": "^22.4.3",
-    "jest-junit-reporter": "^1.1.0",
+    "jest-html-reporter": "^2.4.1",
     "jest-preset-angular": "^5.2.1",
     "ng-packagr": "^2.4.1",
     "pre-commit": "^1.2.2",
@@ -98,7 +98,7 @@
     "transformIgnorePatterns": [
       "node_modules/(?!@ngrx)"
     ],
-    "testResultsProcessor": "./node_modules/jest-junit-reporter",
+    "testResultsProcessor": "./node_modules/jest-html-reporter",
     "collectCoverageFrom": [
       "src/**/*(*.service|*.component|*.pipe|*.directive).{ts,html}"
     ]

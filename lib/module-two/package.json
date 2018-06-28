@@ -1,4 +1,5 @@
 {
+  "description": "NOT actual package, but for ng-packagr and npm scripts",
   "ngPackage": {
     "lib": {
       "entryFile": "index.ts"
