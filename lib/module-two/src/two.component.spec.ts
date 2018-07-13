@@ -17,7 +17,7 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
-  it("should have as title 'app'", async(() => {
+  it('should have as title \'app\'', async(() => {
     const fixture = TestBed.createComponent(TwoComponent);
     const comp = fixture.debugElement.componentInstance;
     expect(comp).toBeTruthy();

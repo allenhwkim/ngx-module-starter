@@ -1,5 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
+/**
+ * The is a sample component of common module.
+ */
 @Component({
   selector: 'my-component-1',
   template: `
