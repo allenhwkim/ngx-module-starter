@@ -44,7 +44,9 @@
     "package",
     "module"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@ngx-translate/core": "^9.1.1"
+  },
   "peerDependencies": {},
   "devDependencies": {
     "@angular/animations": "^5.2.9",
@@ -67,7 +69,8 @@
     "jest": "^22.4.3",
     "jest-html-reporter": "^2.4.1",
     "jest-preset-angular": "^5.2.1",
-    "ng-packagr": "^2.4.1",
+    "ng-packagr": "^3.0.3",
+    "ngx-bootstrap": "^3.0.1",
     "pre-commit": "^1.2.2",
     "puppeteer": "^1.2.0",
     "rxjs": "^5.5.6",
