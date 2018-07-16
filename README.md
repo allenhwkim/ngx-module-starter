@@ -69,3 +69,6 @@ $ vi .angular-cli.json package.json README.md  # edit these files for your packa
 * `npm start` to start test application for all modules
 * `npm run build` to build library and test application for production
 * `npm test` to run tests
+* `npm run test:coverage` to see the coverage report
+* `npm run lint` to run code linting
+* `npm run doc` to generate documentation
