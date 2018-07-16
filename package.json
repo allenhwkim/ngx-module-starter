@@ -16,7 +16,7 @@
     "test:acceptance": "start-server-and-test start http-get://localhost:4200 test:codecept",
     "test:codecept": "codeceptjs run",
     "lint": "tslint --project '.' -t stylish --fix",
-    "gendoc": "compodoc -p ./tsconfig.json -s"
+    "doc": "compodoc -p ./tsconfig.json -s"
   },
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "ngPackage": {
