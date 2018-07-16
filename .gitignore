@@ -39,6 +39,9 @@ yarn-error.log
 testem.log
 /typings
 
+# unit test report
+/documentation
+
 # e2e
 /e2e/*.js
 /e2e/*.map

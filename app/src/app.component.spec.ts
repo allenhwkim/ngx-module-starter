@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { MockComponent } from '../../test/jest-setup';
 
 describe('AppComponent', () => {
-  var fixture;
-  var component;
+  let fixture;
+  let component;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
