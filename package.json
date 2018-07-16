@@ -12,9 +12,11 @@
     "build:lib": "ng-packagr -p package.json",
     "test": "npm run test:unit && npm run test:acceptance",
     "test:unit": "jest",
+    "test:coverage":"jest --coverage",
     "test:acceptance": "start-server-and-test start http-get://localhost:4200 test:codecept",
     "test:codecept": "codeceptjs run",
-    "lint": "tslint --project '.' -t stylish --fix"
+    "lint": "tslint --project '.' -t stylish --fix",
+    "gendoc": "compodoc -p ./tsconfig.json -s"
   },
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "ngPackage": {
@@ -61,6 +63,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ngx-translate/core": "^9.1.1",
     "@types/node": "~6.0.60",
     "angular-tslint-rules": "^1.2.1",
     "codeceptjs": "^1.1.7",
@@ -71,13 +74,12 @@
     "jest-preset-angular": "^5.2.1",
     "ng-packagr": "^3.0.3",
     "ngx-bootstrap": "^3.0.1",
-    "@ngx-translate/core": "^9.1.1",
     "pre-commit": "^1.2.2",
     "puppeteer": "^1.2.0",
     "rxjs": "^5.5.6",
     "start-server-and-test": "^1.4.1",
     "ts-node": "~4.1.0",
-    "tslint": "~5.9.1",
+    "tslint": "^5.10.0",
     "typescript": "~2.5.3",
     "zone.js": "^0.8.19"
   },
