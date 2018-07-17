@@ -14,7 +14,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         MockComponent('my-component-1'),
-        MockComponent('my-component-2')
+        MockComponent('my-component-2'),
+        MockComponent('my-component-3')
       ]
       // schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
