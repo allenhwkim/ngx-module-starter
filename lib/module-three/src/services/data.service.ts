@@ -10,6 +10,6 @@ export class DataService {
    * The method getData returns a generic observable
    */
   public getData(): Observable<number> {
-      return Observable.of(15);
+    return Observable.of(15);
   }
 }
