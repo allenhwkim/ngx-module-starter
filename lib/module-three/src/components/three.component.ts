@@ -11,13 +11,13 @@ import { DataService } from '../services';
   styleUrls: []
 })
 export class ThreeComponent implements OnInit {
-    public value: number;
+  public value: number;
 
-    constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) {}
 
-    ngOnInit(): void {
-        this.dataService.getData().subscribe((result: number) => {
-            this.value = result;
-        });
-    }
+  ngOnInit(): void {
+    this.dataService.getData().subscribe((result: number) => {
+      this.value = result;
+    });
+  }
 }

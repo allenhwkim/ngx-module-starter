@@ -7,7 +7,6 @@ import { DataService } from '../services';
 import { MockComponent, MockPipe } from '../../../../test/jest-setup';
 
 describe('ThreeComponent', () => {
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [

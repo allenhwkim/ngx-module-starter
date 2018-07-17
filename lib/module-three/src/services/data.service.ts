@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
  */
 @Injectable()
 export class DataService {
-    /**
-     * The method getData returns a generic observable
-     */
-    public getData(): Observable<number> {
-        return Observable.of(15);
-    }
+  /**
+   * The method getData returns a generic observable
+   */
+  public getData(): Observable<number> {
+      return Observable.of(15);
+  }
 }
