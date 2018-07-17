@@ -1,0 +1,11 @@
+{
+  "description": "NOT actual package, but for ng-packagr and npm scripts",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts"
+    }
+  },
+  "scripts": {
+    "test": "cd ../.. && jest modules/module-three/**/*.spec.ts"
+  }
+}

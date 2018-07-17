@@ -5,7 +5,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { OneComponent } from './one.component';
 import { MockComponent } from '../../../test/jest-setup';
 
-describe('AppComponent', () => {
+describe('OneComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
