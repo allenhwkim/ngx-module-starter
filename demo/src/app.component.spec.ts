@@ -3,7 +3,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 // do not import any other than you test. For others, mock it
 import { AppComponent } from './app.component';
-import { MockComponent } from '../../test/jest-setup';
+import { MockComponent } from './test-mock';
 
 describe('AppComponent', () => {
   let fixture;

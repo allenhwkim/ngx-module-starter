@@ -1,18 +1,18 @@
 {
-  "name": "my-package",
+  "name": "rci-components",
   "description": "Angular5+ library development starter using jest, codecept, ngx-packagr ",
   "version": "0.1.0",
   "license": "MIT",
-  "main": "lib/dist/bundles/my-package.umd.js",
-  "typings": "lib/dist/index.d.ts",
+  "main": "dist/bundles/rci-components.umd.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "start": "ng serve",
-    "build": "npm run build:app && npm run build:lib",
-    "build:app": "ng build --prod",
-    "build:lib": "ng-packagr -p package.json",
+    "start": "./node-ver-check.js && ng serve --open",
+    "build": "npm run build:demo && npm run build:src",
     "test": "npm run test:unit && npm run test:acceptance",
-    "test:unit": "jest",
-    "test:coverage":"jest --coverage",
+    "-----------------------------------------------------": "",
+    "build:demo": "ng build --prod",
+    "build:src": "ng-packagr -p package.json",
+    "test:unit": "./node-ver-check.js && jest --coverage",
     "test:acceptance": "start-server-and-test start http-get://localhost:4200 test:codecept",
     "test:codecept": "codeceptjs run",
     "lint": "tslint --project '.' -t stylish --fix",
@@ -21,23 +21,23 @@
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "ngPackage": {
     "lib": {
-      "entryFile": "lib/index.ts"
+      "entryFile": "src/index.ts"
     },
     "deleteDestPath": true,
-    "dest": "lib/dist"
+    "dest": "dist"
   },
   "pre-commit": [
     "lint"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allenhwkim/my-package"
+    "url": "git+https://github.com/allenhwkim/rci-component"
   },
   "author": "Allen Kim<allenhwkim@gmail.com>",
   "bugs": {
-    "url": "https://github.com/allenhwkim/my-package/issues"
+    "url": "https://github.com/allenhwkim/rci-components/issues"
   },
-  "homepage": "https://github.com/allenhwkim/my-package#readme",
+  "homepage": "https://github.com/allenhwkim/rci-components#readme",
   "keywords": [
     "angular",
     "typescript",
@@ -46,9 +46,6 @@
     "package",
     "module"
   ],
-  "dependencies": {
-    "@ngx-translate/core": "^9.1.1"
-  },
   "peerDependencies": {},
   "devDependencies": {
     "@angular/animations": "^5.2.9",
@@ -66,12 +63,14 @@
     "@ngx-translate/core": "^9.1.1",
     "@types/node": "~6.0.60",
     "angular-tslint-rules": "^1.2.1",
-    "codeceptjs": "^1.1.7",
+    "codeceptjs": "^1.3.3",
     "codelyzer": "^4.2.1",
+    "compodoc": "0.0.41",
     "core-js": "^2.4.1",
-    "jest": "^22.4.3",
+    "jest": "^23.5.0",
     "jest-html-reporter": "^2.4.1",
     "jest-preset-angular": "^5.2.1",
+    "jest-zone-patch": "0.0.8",
     "ng-packagr": "^3.0.3",
     "ngx-bootstrap": "^3.0.1",
     "pre-commit": "^1.2.2",
