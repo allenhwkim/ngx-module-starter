@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 // do not import any other than you test. For others, mock it
 import { ThreeComponent } from './three.component';
 import { DataService } from '../services';
-import { MockComponent, MockPipe } from '../../../../test/jest-setup';
+import { MockComponent, MockPipe } from '../../../test-mock';
 
 describe('ThreeComponent', () => {
   beforeEach(async(() => {
