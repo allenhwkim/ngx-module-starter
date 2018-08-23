@@ -1,5 +1,6 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import '../custom-elements';
 
 import { AppModule } from './src/app.module';
 
