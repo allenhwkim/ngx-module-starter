@@ -46,6 +46,7 @@
     "package",
     "module"
   ],
+  "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {
     "@angular/animations": "^5.2.9",
@@ -105,7 +106,8 @@
     ],
     "testResultsProcessor": "./node_modules/jest-html-reporter",
     "collectCoverageFrom": [
-      "src/**/*(*.service|*.component|*.pipe|*.directive).{ts,html}"
+      "app/src/**/*(*.service|*.component|*.pipe|*.directive).{ts,html}",
+      "lib/**/*(*.service|*.component|*.pipe|*.directive).{ts,html}"
     ]
   }
 }
